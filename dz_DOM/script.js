@@ -15,7 +15,6 @@ let programmingLenguages = [{
         label: "Java"
     }
 ]
-let randomArray = [1, 2, "три", "четыре"]
 
 
 //                               ЗАДАНИЕ №1
