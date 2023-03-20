@@ -1,18 +1,14 @@
 let programmingLenguages = [{
         value: "C++",
-        label: "C++"
     },
     {
         value: "Python",
-        label: "Python"
     },
     {
         value: "C#",
-        label: "C#"
     },
     {
         value: "Java",
-        label: "Java"
     }
 ]
 
