@@ -1,0 +1,81 @@
+/* Задание №1 */
+
+
+/*
+* {
+    margin: 0;
+}
+.main {
+    background-color: aqua;
+    height: 20vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeBg {
+    background-color: rgb(147, 172, 255);
+    height: 4vh;
+    width: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+p {
+    font-size: larger;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+    margin-top: 30px;
+    height: 30px;
+    background-color: #a2dbf5;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #83bdd8;
+}
+
+.input {
+    margin-top: 10px;
+    background-color: #d5e5ec;
+    font-weight: 600;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+} */
+
+
+/* ----------------------------------------------- */
+
+
+/* Задание №2 */
+
+
+/* * {
+    margin: 0;
+}
+
+.main {
+    background-color: rgb(253, 224, 168);
+    width: 60vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    background-color: rgb(250, 224, 171);
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 5px;
+    font-size: 24px;
+} */
