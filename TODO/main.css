@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+.userInputPlace {
+    background-color: #9a3df1;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+}
+
+.userInput {
+    margin-right: 3vh;
+    margin-top: 0.6vh;
+    width: 40vh;
+    height: 5vh;
+    font-size: larger;
+    font-weight: 500;
+    background-color: #9a3df1;
+    border-color: #8531d4;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+.btnInput {
+    margin-right: 3vh;
+    margin-top: 1vh;
+    width: 10vh;
+    height: 5vh;
+    background-color: #ad73e4;
+    border-color: #ad73e4;
+    color: white;
+}
+
+.btnInput:hover {
+    background-color: #9a3df1;
+}
+
+.hr1 {
+    border: 0;
+    height: 2px;
+    background-color: #4B0082;
+}
+
+.todoList {
+    background-color: #BA55D3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoTitle {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #BA55D3;
+}
+
+.body {
+    background-color: #BA55D3
+}
