@@ -98,9 +98,7 @@ function newDeal() {
 
 // запуск функции по нажатию Enter
 userInput.addEventListener("keyup", (event) => {
-    if (event.keyCode === 13) {
-        btnInput.click()
-    }
+    event.keyCode === 13 ? btnInput.click() : null
 })
 
 // запуск функции по нажатию кнопки
