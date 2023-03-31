@@ -14,7 +14,7 @@ function newDeal() {
     if (userInput.value.length == 0) {
         alert("Вы ничего не ввели.")
         return
-    }
+    } 
 
     // добавление дела
     dealText.innerHTML = userInput.value
