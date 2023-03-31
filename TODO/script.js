@@ -81,9 +81,7 @@ function newDeal() {
 
     // подтверждение удаления
     btnDelete.addEventListener("click", () => {
-        let question = "Вы действительно хотите удалить это дело?"
-        let result = confirm(question)
-        result ? containerDeal.remove() : null
+        confirm("Вы действительно хотите удалить это дело?") ? containerDeal.remove() : null
     })
 
     // функционал готово/не готово
