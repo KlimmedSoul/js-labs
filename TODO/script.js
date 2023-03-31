@@ -1,6 +1,7 @@
 let userInput = document.querySelector(".userInput")
 let btnInput = document.querySelector(".btnInput")
 let todoList = document.querySelector(".todoList")
+let btnDeleteAll = document.querySelector(".deleteAll")
 
 function newDeal() {
     // создание элементов
@@ -22,6 +23,7 @@ function newDeal() {
     containerDeal.append(dealText)
     containerDeal.append(btnReady)
     containerDeal.append(btnDelete)
+    containerDeal.classList.add("containerDeal")
 
     // 1 блок дела
     containerDeal.style.display = 'flex'
@@ -52,6 +54,8 @@ function newDeal() {
     btnDelete.style.fontSize = "16px"
     btnDelete.style.marginLeft = "50px"
     btnDelete.style.justifyContent = "right"
+
+
 
 
     // наведение на кнопку "Удалить"
@@ -103,3 +107,17 @@ userInput.addEventListener("keyup", (event) => {
 
 // запуск функции по нажатию кнопки
 btnInput.addEventListener("click", newDeal)
+
+
+// очистка листа
+btnDeleteAll.addEventListener("click", () => {
+    let allContainerDeals = document.querySelectorAll(".containerDeal")
+    let result = confirm("Вы действительно хотите очистить лист?")
+    if (allContainerDeals.length > 0) {
+        for (let i = 0; i < allContainerDeals.length; i++) {
+            result ? allContainerDeals[i].remove() : null
+        }
+    } else {
+        alert("Лист уже пустой")
+    }
+})
