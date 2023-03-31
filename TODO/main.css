@@ -64,3 +64,16 @@
 .body {
     background-color: #BA55D3
 }
+
+.deleteAll {
+    background-color: hsl(271, 90%, 70%);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15%;
+}
+
+.deleteAll:hover {
+    background-color: #4B0082;
+}
