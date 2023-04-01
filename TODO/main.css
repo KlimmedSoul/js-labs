@@ -96,6 +96,9 @@
     background-color: #cc0000;
 }
 
+
+/* Кнопка удалить выбранное */
+
 .deleteSelected {
     background-color: red;
     color: white;
@@ -106,6 +109,29 @@
     border-radius: 15%;
 }
 
+
+/* Кнопка удалить выбранное при наведении */
+
 .deleteSelected:hover {
+    background-color: #cc0000;
+}
+
+
+/* Кнопка удалить сделанные дела */
+
+.deleteReady {
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+}
+
+
+/* Кнопка удалить сделанные дела при наведении */
+
+.deleteReady:hover {
     background-color: #cc0000;
 }
