@@ -1,8 +1,9 @@
+let todoList = document.querySelector(".todoList")
 let userInput = document.querySelector(".userInput")
 let btnInput = document.querySelector(".btnInput")
-let todoList = document.querySelector(".todoList")
 let btnDeleteAll = document.querySelector(".deleteAll")
 let btnDeleteSelected = document.querySelector(".deleteSelected")
+let btnDeleteReady = document.querySelector(".deleteReady")
 
 function newDeal() {
     // создание элементов
@@ -49,6 +50,7 @@ function newDeal() {
     btnReady.style.height = "5vh"
     btnReady.style.fontSize = "16px"
     btnReady.style.marginLeft = "20vh"
+    btnReady.classList.add("btnReady")
 
     // кнопка "Удалить"
     btnDelete.textContent = "Удалить"
@@ -141,6 +143,18 @@ btnDeleteSelected.addEventListener("click", () => {
     let result = confirm("Вы действительно хотите удалить выбранное?")
     for (let i = 0; i < allCheckboxes.length; i++) {
         if (allCheckboxes[i].checked) {
+            result ? allContainerDeals[i].remove() : null
+        }
+    }
+})
+
+//Удалить сделаные дела
+btnDeleteReady.addEventListener("click", () => {
+    let allBtnReady = document.querySelectorAll(".btnReady")
+    let allContainerDeals = document.querySelectorAll(".containerDeal")
+    let result = confirm("Вы действительно хотите удалить сделанные дела?")
+    for (let i = 0; i < allBtnReady.length; i++) {
+        if (allBtnReady[i].textContent == "Не готово") {
             result ? allContainerDeals[i].remove() : null
         }
     }
