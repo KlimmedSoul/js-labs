@@ -2,12 +2,18 @@
     margin: 0;
 }
 
+
+/* Шапка */
+
 .userInputPlace {
     background-color: #9a3df1;
     display: flex;
     justify-content: center;
     height: 7vh;
 }
+
+
+/* Ввод */
 
 .userInput {
     margin-right: 3vh;
@@ -25,6 +31,9 @@
     color: white;
 }
 
+
+/* Кнопка ввода */
+
 .btnInput {
     margin-right: 3vh;
     margin-top: 1vh;
@@ -34,6 +43,9 @@
     border-color: #ad73e4;
     color: white;
 }
+
+
+/* Кнопка ввода при наведении */
 
 .btnInput:hover {
     background-color: #9a3df1;
@@ -65,15 +77,35 @@
     background-color: #BA55D3
 }
 
+
+/* Кнопка удалить все */
+
 .deleteAll {
-    background-color: hsl(271, 90%, 70%);
+    background-color: red;
     color: rgb(255, 255, 255);
     font-size: large;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 15%;
 }
- 
+
+
+/* Кнопка удалить все при наведении */
+
 .deleteAll:hover {
-    background-color: #4B0082;
+    background-color: #cc0000;
+}
+
+.deleteSelected {
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+}
+
+.deleteSelected:hover {
+    background-color: #cc0000;
 }
