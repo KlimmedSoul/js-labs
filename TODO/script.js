@@ -2,6 +2,7 @@ let userInput = document.querySelector(".userInput")
 let btnInput = document.querySelector(".btnInput")
 let todoList = document.querySelector(".todoList")
 let btnDeleteAll = document.querySelector(".deleteAll")
+let btnDeleteSelected = document.querySelector(".deleteSelected")
 
 function newDeal() {
     // создание элементов
@@ -9,12 +10,15 @@ function newDeal() {
     let dealText = document.createElement("p")
     let btnReady = document.createElement("button")
     let btnDelete = document.createElement("button")
+    let checkboxDeal = document.createElement("input")
+    checkboxDeal.setAttribute("type", "checkbox")
+
 
     // проверка на нулевой ввод
     if (userInput.value.length == 0) {
         alert("Вы ничего не ввели.")
         return
-    } 
+    }
 
     // добавление дела
     dealText.innerHTML = userInput.value
@@ -23,6 +27,7 @@ function newDeal() {
     containerDeal.append(dealText)
     containerDeal.append(btnReady)
     containerDeal.append(btnDelete)
+    containerDeal.append(checkboxDeal)
     containerDeal.classList.add("containerDeal")
 
     // 1 блок дела
@@ -54,6 +59,14 @@ function newDeal() {
     btnDelete.style.fontSize = "16px"
     btnDelete.style.marginLeft = "50px"
     btnDelete.style.justifyContent = "right"
+
+    // Чекбоксы
+    checkboxDeal.classList.add("checkboxDeal")
+    checkboxDeal.style.marginLeft = "2vh"
+    checkboxDeal.style.marginRight = "0.5vh"
+    checkboxDeal.style.cursor = "pointer"
+    checkboxDeal.style.height = "20px"
+    checkboxDeal.style.width = "20px"
 
 
 
@@ -117,5 +130,18 @@ btnDeleteAll.addEventListener("click", () => {
         }
     } else {
         alert("Лист уже пустой")
+    }
+})
+
+
+//Удалить выбранные дела
+btnDeleteSelected.addEventListener("click", () => {
+    let allCheckboxes = document.querySelectorAll(".checkboxDeal")
+    let allContainerDeals = document.querySelectorAll(".containerDeal")
+    let result = confirm("Вы действительно хотите удалить выбранное?")
+    for (let i = 0; i < allCheckboxes.length; i++) {
+        if (allCheckboxes[i].checked) {
+            result ? allContainerDeals[i].remove() : null
+        }
     }
 })
