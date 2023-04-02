@@ -9,13 +9,6 @@ body {
     justify-content: center
 }
 
-p {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 body select {
     background: rgb(250, 3, 188);
     color: rgb(2, 46, 13);
