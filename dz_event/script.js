@@ -28,7 +28,7 @@
 
 // let textInput = document.querySelector(".input")
 // let titleText = document.querySelector(".title")
-// let remainingTime = 0;
+
 
 // function changeTitleText() {
 //     titleText.textContent = textInput.value
